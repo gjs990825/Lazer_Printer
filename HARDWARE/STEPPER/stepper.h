@@ -10,7 +10,7 @@ extern "C" {
 #define LINE_SPEED 2500
 #define PIXEL_SPEED 8000
 
-#define ALL_BLACK 25
+#define ALL_BLACK 24
 
 #define FAST 14000//15000
 #define SLOW 8000//2500
@@ -49,7 +49,7 @@ public:
     static uint8_t Manual_Set(void);
     static void Draw_Circle(uint32_t x, uint32_t y, uint32_t r);
     static void Draw_Rectangle(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2);
-    static void Draw_Line(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2);
+    static void Draw_Line(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2, uint16_t speed);
     static void Draw_Pixel(uint32_t x, uint32_t y, uint16_t size, uint8_t proportion = 255);
     static void Draw_Char(uint32_t x, uint32_t y, uint8_t ch, uint16_t size, uint8_t proportion = 255);
     static void Draw_String(uint32_t x, uint16_t y, uint8_t size, char *str, uint8_t proportion = 255);

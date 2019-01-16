@@ -35,7 +35,16 @@ int main(int argc, char const *argv[])
 	//STEPPER::Draw_Picture(x_huaji, y_huaji, huaji, 64);
 	//STEPPER::Draw_Picture(x_test, y_test, test, 64);
 
-	STEPPER::Draw_Picture(x_wulong_1, y_wulong_2, wulong_1, 64);
+	//STEPPER::Draw_Picture(x_wulong_1, y_wulong_2, wulong_1, 64);
+	
+	
+	// for(uint8_t i = 1; i <= 32; i++)
+	// {
+	// 	STEPPER::Draw_Pixel(0, i, 64, i * 8);
+	// }
+	
+	
+	STEPPER::Draw_AvengersLogo();
 
 	STEPPER::Move_To(0, 0);
 
